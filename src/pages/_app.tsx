@@ -1,4 +1,4 @@
-import '@/styles/globals.css'
+import '../../public/styles/globals.css'
 import type {AppProps} from 'next/app';
 import {Provider} from "react-redux";
 import {combineReducers, configureStore} from "@reduxjs/toolkit";
@@ -42,7 +42,7 @@ const store = configureStore({
 });
 const persistor = persistStore(store);
 
-export default function App({Component, pageProps}: AppProps) {
+export default function _app({Component, pageProps}: AppProps) {
 
     return (
         <Provider store={store}>
