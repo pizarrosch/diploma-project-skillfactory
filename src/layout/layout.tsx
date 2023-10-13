@@ -4,7 +4,8 @@ import Link from "next/link";
 import {PropsWithChildren} from "react";
 import Image from "next/image";
 import logo from '../../public/assets/logo.svg';
-// import s from './layout.module.scss';
+import Navigation from "@/components/Navigation/Navigation";
+import s from './layout.module.scss';
 
 export default function Layout({children}: PropsWithChildren) {
     return (
@@ -14,11 +15,11 @@ export default function Layout({children}: PropsWithChildren) {
                 <meta name="description" content="SkillFactory Next.js project" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
-            <header>
+            <header className={s.header}>
                 <Link href='/'>
                     <Image src={logo} alt='company logo' />
                 </Link>
-                {/*<Navigation handleShowLogin={handleShowLogin}/>*/}
+                <Navigation />
             </header>
             <main>{children}</main>
         </>

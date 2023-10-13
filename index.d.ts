@@ -3,3 +3,8 @@ declare module "*.svg" {
     export = value;
 }
 
+declare module "*.scss" {
+    const value: any;
+    export = value;
+}
+
