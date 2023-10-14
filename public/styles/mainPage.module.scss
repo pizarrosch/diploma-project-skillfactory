@@ -28,3 +28,18 @@
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+
+.slider {
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+
+.cardsContainer {
+  display: flex;
+  gap: 30px;
+  width: 1260px;
+  overflow: hidden;
+  padding: 10px 10px;
+}

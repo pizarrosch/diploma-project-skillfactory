@@ -1,7 +1,34 @@
 import Layout from "@/layout/layout";
 import Image from "next/image";
 import bgImage1 from '../../public/assets/Image 1.png';
+import stopWatch from '../../public/assets/stop-watch.svg';
+import magnifyingGlass from '../../public/assets/magnifying-glass.svg';
+import shield from '../../public/assets/shield.svg';
+import leftArrow from '../../public/assets/left-arrow.svg';
+import rightArrow from '../../public/assets/arrow-right.svg';
+import sittingMan from '../../public/assets/sitting-man.svg';
 import s from '../../public/styles/mainPage.module.scss';
+import Card from "@/components/Card/Card";
+import {ImgSource} from "@/types";
+
+const cardContents = [
+    {
+        src: stopWatch,
+        text: 'Высокая и оперативная скорость \n обработки заявки'
+    },
+    {
+        src: magnifyingGlass,
+        text: 'Огромная комплексная база \n данных, обеспечивающая\n объективный ответ на запрос'
+    },
+    {
+        src: shield,
+        text: 'Защита конфеденциальных сведений, \n не подлежащих разглашению по \n федеральному законодательству'
+    },
+    {
+        src: shield,
+        text: 'Защита Ваших денег'
+    }
+]
 
 export default function Home() {
     return (
@@ -18,7 +45,19 @@ export default function Home() {
             </div>
             <div>
                 <p style={{fontSize: '45px'}} className={s.paragraph}>Почему именно мы</p>
+                <div className={s.slider}>
+                    <Image src={leftArrow} alt='left' />
+                    <div className={s.cardsContainer}>
+                        {
+                            cardContents.map((cardContent: ImgSource) => {
+                                return <Card src={cardContent.src} text={cardContent.text} />
+                            })
+                        }
+                    </div>
+                    <Image src={rightArrow} alt='right' />
+                </div>
             </div>
+            <Image src={sittingMan} alt='sittingMan' />
         </Layout>
     )
 }
