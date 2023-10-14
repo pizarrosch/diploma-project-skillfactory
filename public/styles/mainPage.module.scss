@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Ferry Black';
+  src: url('../assets/Ferry-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.publicationSearchContainer {
+  display: flex;
+
+  .getDataByInn {
+    background-color: rgba(89, 112, 255, 1);
+    color: white;
+    width: 335px;
+    height: 59px;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 50px;
+  }
+}
+
+.paragraph {
+  font-family: 'Ferry Black', sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}

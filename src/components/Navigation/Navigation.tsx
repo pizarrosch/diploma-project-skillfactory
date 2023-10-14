@@ -5,9 +5,9 @@ export default function Navigation() {
         <div className={s.root}>
             <nav className={s.navigation}>
                 <ul className={s['navigation-list']}>
-                    <li>Главная</li>
-                    <li>Тарифы</li>
-                    <li>FAQ</li>
+                    <li className={s['navigation-list__item']}>Главная</li>
+                    <li className={s['navigation-list__item']}>Тарифы</li>
+                    <li className={s['navigation-list__item']}>FAQ</li>
                 </ul>
             </nav>
             <div className={s.loginMenu}>
