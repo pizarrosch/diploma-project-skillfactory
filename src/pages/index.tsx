@@ -7,9 +7,11 @@ import shield from '../../public/assets/shield.svg';
 import leftArrow from '../../public/assets/left-arrow.svg';
 import rightArrow from '../../public/assets/arrow-right.svg';
 import sittingMan from '../../public/assets/sitting-man.svg';
+import lamp from '../../public/assets/lamp.svg';
 import s from '../../public/styles/mainPage.module.scss';
 import Card from "@/components/Card/Card";
 import {ImgSource} from "@/types";
+import TariffCard from "@/components/TariffCard/TariffCard";
 
 const cardContents = [
     {
@@ -39,7 +41,7 @@ export default function Home() {
                         <p className={s.paragraph}>сервис по поиску <br/> публикаций  <br/> о компании <br/> по его ИНН</p>
                         <p style={{fontSize: '20px'}}>Комплексный анализ публикаций, получение данных <br/> в формате PDF на электронную почту.</p>
                     </div>
-                    <button className={s.getDataByInn}>Запросить данные</button>
+                    <button className={s.getDataByInnButton}>Запросить данные</button>
                 </div>
                 <Image src={bgImage1} alt='man pointing at the screen' />
             </div>
@@ -58,6 +60,12 @@ export default function Home() {
                 </div>
             </div>
             <Image src={sittingMan} alt='sittingMan' />
+            <div>
+                <p style={{fontSize: '45px'}} className={s.paragraph}>Наши тарифы</p>
+                <div>
+                    <TariffCard src={lamp} />
+                </div>
+            </div>
         </Layout>
     )
 }
