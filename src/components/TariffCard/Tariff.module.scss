@@ -14,14 +14,11 @@
   .tariff-title {
     display: flex;
     height: 132px;
-    background-color: rgba(255, 182, 79, 1);
     margin-top: 0;
-    justify-content: center;
-    padding-bottom: 25px;
-    padding-left: 10px;
-    padding-top: 5px;
+    padding: 5px 10px 25px 30px;
     box-sizing: border-box;
     border-radius: 10px 10px 0 0;
+    justify-content: space-between;
 
     .tariff-title__title {
       font-size: 30px;
