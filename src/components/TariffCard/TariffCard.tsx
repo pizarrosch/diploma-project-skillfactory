@@ -7,12 +7,12 @@ import {TTariffCard} from "@/types";
 
 export default function TariffCard(
     {
-       tariffTitle,
-       tariffDescription,
-       actualPrice,
-       oldPrice,
-       monthlyRate,
-       tariffOptions,
+        tariffTitle,
+        tariffDescription,
+        actualPrice,
+        oldPrice,
+        monthlyRate,
+        tariffOptions,
         backgroundColor,
         color,
         src
@@ -30,7 +30,7 @@ export default function TariffCard(
                     <h2 className={st['tariff-title__title']}>{tariffTitle}</h2>
                     <span className={st['tariff-title__description']}>{tariffDescription}</span>
                 </div>
-                <Image className={st['tariff-title__image']} src={src} alt='lamp' />
+                <Image className={st['tariff-title__image']} src={src} alt='lamp'/>
             </div>
             <div className={st['tariff-details-container']}>
                 <div className={st['current-tariff-icon']}>Текущий тариф</div>
@@ -43,15 +43,15 @@ export default function TariffCard(
             <div className={st['tariff-options']}>
                 <h6 style={{fontSize: '20px', fontWeight: 500, marginBottom: '10px'}}>В тариф входит:</h6>
                 <div className={st['tariff-options__option']}>
-                    <Image src={checkmark} alt='checkmark' />
+                    <Image src={checkmark} alt='checkmark'/>
                     <span className={st['eighteen-px-text']}>{tariffOptions.firstOption}</span>
                 </div>
                 <div className={st['tariff-options__option']}>
-                    <Image src={checkmark} alt='checkmark' />
+                    <Image src={checkmark} alt='checkmark'/>
                     <span className={st['eighteen-px-text']}>{tariffOptions.secondOption}</span>
                 </div>
                 <div className={st['tariff-options__option']}>
-                    <Image src={checkmark} alt='checkmark' />
+                    <Image src={checkmark} alt='checkmark'/>
                     <span className={st['eighteen-px-text']}>{tariffOptions.thirdOption}</span>
                 </div>
             </div>

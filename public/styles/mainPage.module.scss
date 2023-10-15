@@ -9,7 +9,10 @@
   display: flex;
 }
 
-.getDataByInnButton, .seeDetailsButton {
+.getDataByInnButton,
+.seeDetailsButton,
+.loginButton
+{
   background-color: rgba(89, 112, 255, 1);
   color: white;
   width: 335px;
@@ -25,6 +28,13 @@
   width: 355px;
   margin-left: 30px;
   margin-top: 70px;
+}
+
+.loginButton {
+  width: 379px;
+  opacity: 50%;
+  margin-top: 35px;
+  margin-bottom: 15px;
 }
 
 .paragraph {

@@ -8,3 +8,8 @@ body {
   position: relative;
   scroll-behavior: smooth;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}

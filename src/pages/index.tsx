@@ -19,28 +19,30 @@ export default function Home() {
             <div className={s.publicationSearchContainer}>
                 <div>
                     <div>
-                        <p className={s.paragraph}>сервис по поиску <br/> публикаций  <br/> о компании <br/> по его ИНН</p>
-                        <p style={{fontSize: '20px'}}>Комплексный анализ публикаций, получение данных <br/> в формате PDF на электронную почту.</p>
+                        <p className={s.paragraph}>сервис по поиску <br/> публикаций <br/> о компании <br/> по его ИНН
+                        </p>
+                        <p style={{fontSize: '20px'}}>Комплексный анализ публикаций, получение данных <br/> в формате
+                            PDF на электронную почту.</p>
                     </div>
                     <button className={s.getDataByInnButton}>Запросить данные</button>
                 </div>
-                <Image src={bgImage1} alt='man pointing at the screen' />
+                <Image src={bgImage1} alt='man pointing at the screen'/>
             </div>
             <div>
                 <p style={{fontSize: '45px'}} className={s.paragraph}>Почему именно мы</p>
                 <div className={s.slider}>
-                    <Image src={leftArrow} alt='left' />
+                    <Image src={leftArrow} alt='left'/>
                     <div className={s.cardsContainer}>
                         {
                             cardContents.map((cardContent: ImgSource) => {
-                                return <Card src={cardContent.src} text={cardContent.text} />
+                                return <Card src={cardContent.src} text={cardContent.text}/>
                             })
                         }
                     </div>
-                    <Image src={rightArrow} alt='right' />
+                    <Image src={rightArrow} alt='right'/>
                 </div>
             </div>
-            <Image src={sittingMan} alt='sittingMan' />
+            <Image src={sittingMan} alt='sittingMan'/>
             <div>
                 <p style={{fontSize: '45px'}} className={s.paragraph}>Наши тарифы</p>
                 <div className={s.tariffCardsContainer}>
