@@ -30,7 +30,7 @@ export const tariffCardContents = [
         tariffDescription: 'Для небольшого исследования',
         actualPrice: '799 ₽',
         oldPrice: '1200 ₽',
-        monthlyRate: '150 ₽',
+        monthlyRate: 'или 150 ₽/мес. при рассрочке на 24 мес.',
         tariffOptions: {
             firstOption: 'Безлимитная история запросов',
             secondOption: 'Безопасная сделка',
@@ -45,7 +45,7 @@ export const tariffCardContents = [
         tariffDescription: 'Для HR и фрилансеров',
         actualPrice: '1299 ₽',
         oldPrice: '2600 ₽',
-        monthlyRate: '279 ₽',
+        monthlyRate: 'или 279 ₽/мес. при рассрочке на 24 мес.',
         tariffOptions: {
             firstOption: 'Все пункты тарифа Beginner',
             secondOption: 'Экспорт истории',

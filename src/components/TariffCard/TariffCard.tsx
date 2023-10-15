@@ -38,7 +38,7 @@ export default function TariffCard(
                     <span className={st['price-container__actual-price']}>{actualPrice}</span>
                     <span className={st['price-container__old-price']}>{oldPrice}</span>
                 </div>
-                <span style={{paddingLeft: '30px'}} className={st['eighteen-px-text']}>или {monthlyRate}/мес. при рассрочке на 24 мес.</span>
+                <span style={{paddingLeft: '30px'}} className={st['eighteen-px-text']}>{monthlyRate}</span>
             </div>
             <div className={st['tariff-options']}>
                 <h6 style={{fontSize: '20px', fontWeight: 500, marginBottom: '10px'}}>В тариф входит:</h6>
