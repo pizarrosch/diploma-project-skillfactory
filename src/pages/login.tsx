@@ -14,8 +14,9 @@ export default function Login() {
             <div className={s.root}>
                 <div>
                     <div>
-                        <p className={s.paragraph}>Для оформления подписки <br/> на тариф, необходимо <br/> авторизоваться.</p>
-                        <Image className={s['key-carriers-img']} src={keyCarriers} alt='keyCarriers' />
+                        <p className={s.paragraph}>Для оформления подписки <br/> на тариф,
+                            необходимо <br/> авторизоваться.</p>
+                        <Image className={s['key-carriers-img']} src={keyCarriers} alt='keyCarriers'/>
                     </div>
                 </div>
                 <Image className={s['key-lock']} src={keyLock} alt='key lock'/>
@@ -49,13 +50,13 @@ export default function Login() {
                         <span style={{fontSize: '16px', color: 'rgba(148, 148, 148, 1)'}}>Войти через:</span>
                         <div className={s['account-name-container']}>
                             <div className={s['account-name']}>
-                                <Image src={googleSign} alt='google' />
+                                <Image src={googleSign} alt='google'/>
                             </div>
                             <div className={s['account-name']}>
-                                <Image src={facebookSign} alt='facebook' />
+                                <Image src={facebookSign} alt='facebook'/>
                             </div>
                             <div className={s['account-name']}>
-                                <Image src={yandexSign} alt='yandex' />
+                                <Image src={yandexSign} alt='yandex'/>
                             </div>
                         </div>
                     </div>

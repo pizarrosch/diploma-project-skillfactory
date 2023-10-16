@@ -8,3 +8,5 @@ declare module "*.scss" {
     export = value;
 }
 
+declare module 'react-slick'
+

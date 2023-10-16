@@ -4,7 +4,6 @@ import bgImage1 from '../../public/assets/Image 1.png';
 import leftArrow from '../../public/assets/left-arrow.svg';
 import rightArrow from '../../public/assets/arrow-right.svg';
 import sittingMan from '../../public/assets/sitting-man.svg';
-import lamp from '../../public/assets/lamp.svg';
 import s from '../../public/styles/mainPage.module.scss';
 import Card from "@/components/Card/Card";
 import {ImgSource} from "@/types";
@@ -12,6 +11,7 @@ import TariffCard from "@/components/TariffCard/TariffCard";
 import {cardContents} from '@/data';
 import {tariffCardContents} from '@/data';
 import {TTariffCard} from "@/types";
+import Link from "next/link";
 
 export default function Home() {
     return (
@@ -24,7 +24,11 @@ export default function Home() {
                         <p style={{fontSize: '20px'}}>Комплексный анализ публикаций, получение данных <br/> в формате
                             PDF на электронную почту.</p>
                     </div>
-                    <button className={s.getDataByInnButton}>Запросить данные</button>
+                    <button className={s.getDataByInnButton}>
+                        <Link href={'/searchForm'}>
+                            Запросить данные
+                        </Link>
+                    </button>
                 </div>
                 <Image src={bgImage1} alt='man pointing at the screen'/>
             </div>
@@ -35,7 +39,7 @@ export default function Home() {
                     <div className={s.cardsContainer}>
                         {
                             cardContents.map((cardContent: ImgSource) => {
-                                return <Card src={cardContent.src} text={cardContent.text}/>
+                                 return <Card src={cardContent.src} text={cardContent.text}/>
                             })
                         }
                     </div>
